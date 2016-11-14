@@ -52,15 +52,19 @@ public class Ex1 {
 			e.printStackTrace();
 			System.exit(-1);
 		}
-		
-		boolean[][][] resultParallel=pGol.invoke(field,hSplit,vSplit, nGenerations);
-		
-		if (compareArrays(resultParallel[0],resultSerial[0]) && compareArrays(resultParallel[1],resultSerial[1])){
+		System.out.println("FINISHED SEREAL");
+		//boolean[][][] resultParallel=pGol.invoke(field,hSplit,vSplit, nGenerations);
+        System.out.println("FINISHED SEREAL2");
+		/*if (compareArrays(resultParallel[0],resultSerial[0]) && compareArrays(resultParallel[1],resultSerial[1])){
 			System.out.println("Success!");
 		}else{
 			System.out.println("Parallel version results do not match!!");
 			System.exit(-1);
-		}
+		}*/
+        printArray(resultSerial[0]);
+        System.out.println("");
+        printArray(resultSerial[1]);
+        System.out.println("FINISHED SEREAL3");
 		System.exit(0);
 	}
 
