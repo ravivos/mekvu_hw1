@@ -14,6 +14,7 @@ public class Ex1 {
 			printUsage();
 		}
 		//first comment
+		//second comment
 		String filename=argv[0];
 		int hSplit=Integer.parseInt(argv[1]);
 		int vSplit=Integer.parseInt(argv[2]);
